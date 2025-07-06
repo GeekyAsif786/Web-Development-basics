@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: beige;
+        border: 5px solid black;
+        margin: 2px;
+        padding: 2px;
+        display: flex;
+        height: 1200px; /* Height of the container*/
+        /*flex-direction: column; Direction of content is arranged columnwise, by default its row-wise*/
+        flex-direction: row; /*Direction of content is arranged in row order*/
+        /*flex-wrap: wrap; /* The content box retains its original size (here- 200px) even if the device screen 
+                            size shrinks*/
+        /*justify-content: center;  Aligns the content in the center of the container wrt to horizontal axis*/
+        /*justify-content: space-between;  Aligns the content in the container with equal space between them wrt to horizontal axis*/
+        /*justify-content: space-around;  Aligns the content in the container with equal space around them wrt to horizontal axis*/
+        /*justify-content: space-evenly; /* Aligns the content in the container with even space around them wrt to horizontal axis*/
+        /* For flex-direction: column, the above properties will align the content in vertical axis*/
+        justify-content:space-around; 
+        align-items: center; /* Aligns the content in the center of the container wrt to vertical axis*/
+    }
+    .box{
+
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+        margin: 2px;
+        padding: 2px;
+    }
+    #box1{
+        background-color: blue;        
+    }
+    #box2{
+        background-color: blueviolet;
+    }
+    #box3{
+        background-color: brown;
+    }
+    #box4{
+        background-color: chartreuse;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+    </div>
+</body>
+</html>

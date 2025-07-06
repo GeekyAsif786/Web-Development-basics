@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+    <style>
+        button:hover{
+            background-color: rgb(106, 12, 150);
+            color: rgb(55, 167, 88);
+        }
+    </style>
+</head>
+<body>
+    <h2>Fieldset Syntax Test</h2>
+    <br>
+    <br>
+    <form>
+        <fieldset> 
+            <legend>HTML FIELDSET DUMMY FORM</legend>
+            <label for="name">Enter your name</label>
+            <input type="text" id="name">
+            <br>
+            <br>
+            <h2>Enter your favourite DBS Character</h2>
+            <select name="anime" id="anime">
+                <option value="not selected">--select--</option>
+                <option value="Goku">Goku</option>
+                <option value="Vegeta">Vegeta</option>
+                <option value="Gohan">Gohan</option>
+                <option value="Piccolo">Piccolo</option>
+                <option value="Krillin">Krillin</option>
+                <option value="Tien">Tien</option>
+                <option value="Yamcha">Vegito</option>
+                <option value="Gogeta">Gogeta</option>
+                <option value="Gotenks">Gotenks</option>
+                <option value="Trunks">Trunks</option>
+                <option value="Bardock">Broly</option>
+            </select>
+            <br>
+            <br>
+            <label for="date">Enter your registration date</label>
+            <input type="date" id="date">
+            <br>
+            <br>
+            <h2>Select your gender</h2>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Prefer not to say</label>
+            <br>
+            <br>
+            <h2>Select your fight style</h2>
+            <input type="checkbox" id="Melee">
+            <label for="Melee">Melee</label>
+            <input type="checkbox" id="Ki">
+            <label for="Ki">Ki</label>
+            <input type="checkbox" id="Energy">
+            <label for="Energy">Energy</label>
+            <input type="checkbox" id="Projectile">
+            <label for="Projectile">Projectile</label>
+            <input type="checkbox" id="fullon">
+            <label for="fullon">Full on</label>
+            <br>
+            <br>
+            <textarea name="exp" id="exp" rows="30" cols="30">
+                Enter your experience here
+            </textarea><br>
+            <br>
+            <button style="color: rgb(39, 24, 3); font-family: cursive;">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

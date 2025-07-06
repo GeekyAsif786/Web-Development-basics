@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS testing</title>
+<!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+    body{
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid black;
+    }
+    .paraclass{
+    color: blue;
+    font-size: 20px;
+    }
+    .subclass{
+        color: teal;
+        font-size: large;
+        font-family: cursive;
+    }
+    /* we can also use the id of a section,article or any container tag to customize its style using CSS
+    we just need to follow this syntax: #id{-CSS Attributes-}*/
+    #login{                        
+        color:tomato;
+        font-size: 20px;
+        font-family: cursive;
+    }
+    /* we can also use the class of a section,article or any container tag to customize its style using CSS
+    by following this syntax: (article/p).className{-CSS Attributes here-} */
+    article.paraclass{
+        color: red;
+        font-size: 30px;
+        font-family: cursive;
+    }
+
+</style>
+<link rel="shortcut icon" href="Under-Armour-Symbol.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1>Starting of Journey</h1>
+    <div class="paraclass">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Aut impedit eius repudiandae eveniet! Numquam, possimus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, laudantium ratione.</p>
+        <article id="techtrend">
+            <h2>Here are some key technology trends for 2025:</h2>
+Generative AI: This technology is expected to dominate, creating sophisticated content across various formats, including text, images, and audio.
+AI and Machine Learning: The integration of AI with human intelligence will continue to evolve, enhancing productivity and decision-making.
+5G and IoT: The expansion of 5G networks will drive the growth of IoT devices, enabling smarter cities and improved connectivity.
+Blockchain Technology: This will play a crucial role in enhancing security and transparency across various sectors.
+Quantum Computing: As this technology matures, it will revolutionize data processing and problem-solving capabilities.
+These trends indicate a significant shift towards more intelligent, connected, and efficient technological solutions in the coming years
+        </article>
+        <ol>
+            <li>Internal CSS</li>
+            <li>Inline CSS</li>
+            <li>External CSS</li>
+        </ol>
+    </div>
+        <div class="subclass">
+            <ul>
+                <li>First item in the first list</li>
+                <li>Second item in the first list</li>
+            </ul>
+            <table border="2">
+                <caption>Countrywise Sensus</caption>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Country</th>
+                        <th>State</th>
+                        <th>City</th>
+                        <th>Street</th>
+                        <th>Male</th>
+                        <th>Female</th>
+                        <th>Others</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>    
+                    <td rowspan="8">1</td>
+                    <td rowspan="8">India</td>
+                    <td rowspan="4">Kerala</td>
+                    <td rowspan="2">Cochin</td>
+                    <td>New Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Main Street</td>
+                    <td>300</td>
+                    <td>288</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Trivandrum</td>
+                    <td>Guru Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>TVK Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Maharastra</td>
+                    <td rowspan="2">Mumbai</td>
+                    <td>Krisha Street</td>
+                    <td>700</td>
+                    <td>850</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Main Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Surath</td>
+                    <td>New Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>4</td>
+                </tr>+
+                <tr>
+                    <td>Billa Street</td>
+                    <td>500</td>    
+                    <td>600</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2</td>
+                    <td rowspan="2">America</td>
+                    <td rowspan="2">Alaska</td>
+                    <td rowspan="2"> AKA Central</td>
+                    <td>New Street</td>
+                    <td>200</td>
+                    <td>210</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Cross Street</td>
+                    <td>1000</td>
+                    <td>1050</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+            </table>
+            <br>
+            <section id="login">
+                <h2>Enter details to Login</h2>
+                <form>
+                    <label for="email">enter email address</label>
+                    <input type="mail" id="email" placeholder="Enter your email">
+                    <br>
+                    <br>
+                    <label for="password">Enter your password</label>
+                    <input type="text" id="password" placeholder="Enter your password">
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </div>
+</body>
+</html>
